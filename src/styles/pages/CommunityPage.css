@@ -1,11 +1,25 @@
 .community-content {
+    max-width: 1000px; /* Restricts the width for a more readable layout */
+    margin: 40px auto; /* Centers the content on the page with vertical spacing */
     padding: 20px;
-    max-width: 1200px; /* Set a max-width for the content */
-    margin: auto; /* Center the content */
+    background: #fff; /* Sets a white background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    border-radius: 8px; /* Softens the edges with a slight radius */
 }
 
-.user-gallery, .forum-board, .event-calendar {
-    margin-bottom: 40px;
+/* Style for the gallery section */
+.user-gallery {
+    padding: 30px;
+    background: #f7f7f7; /* A light grey background for the gallery section */
+    border-radius: 8px; /* Rounded corners for the gallery section */
+    margin-bottom: 40px; /* Adds more space between sections */
+}
+
+.user-gallery h2 {
+    text-align: center; /* Centers the gallery heading */
+    margin-bottom: 20px; /* Spacing after the gallery heading */
+    font-size: 2rem; /* A larger font size for the gallery heading */
+    color: #003366; /* A color that stands out */
 }
 
 .gallery-grid {
@@ -14,47 +28,70 @@
     gap: 20px; /* Adds spacing between grid items */
 }
 
+/* Style for the forum board section */
+.forum-board {
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+.forum-board h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #003366;
+}
+
 .forum-links a {
     display: block;
-    margin-bottom: 5px;
-    /* Add desired styles for your forum links */
+    margin-bottom: 10px;
+    color: #0056b3;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #eef7ff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.forum-links a:hover {
+    background-color: #d0e4ff;
+}
+
+/* Style for the event calendar section */
+.event-calendar {
+    padding: 30px;
+    background: #f7f7f7;
+    border-radius: 8px;
+}
+
+.event-calendar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #003366;
 }
 
 .event-list {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Reset default margin for consistency */
+    margin-top: 20px;
 }
 
 .event-list li {
-    margin-bottom: 10px; /* Add margin for spacing */
-    /* Add desired styles for your event list items */
-}
-
-.gallery-item {
-    border: 1px solid #ccc;
+    background-color: #eef7ff;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 4px;
-    padding: 5px;
-    margin: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden; /* Ensure no overflow from the container */
 }
 
-.gallery-item img {
-    width: 100%; /* Ensure the image fills the container */
-    height: auto;
-    object-fit: cover; /* This will cover the area of the container, cropping the image if necessary */
-    aspect-ratio: 16 / 9; /* Adjust the aspect ratio as needed */
+/* Ensure the elements are well-spaced and the text is readable */
+.community-content p,
+.community-content li,
+.community-content a {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
 }
 
-.gallery-caption {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #666;
-}
-
-
-/* Keep the rest of your styles */
+/* Add any additional specific styles for elements within your community sections */

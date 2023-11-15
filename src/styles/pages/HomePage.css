@@ -37,6 +37,20 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1rem; /* You can set the font size as needed */
+    line-height: 1.5; /* Line height for better visual and click area */
+    display: inline-block; /* Allows the use of width and max-width */
+    width: auto; /* Default width to fit content */
+    max-width: 200px; /* Maximum width the button can stretch to */
+    margin: 0 auto; /* Centers the button if the parent is flex or text-align is set to center */
+    text-align: center; /* Ensures text is centered within the button */
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+/* You can also specifically target the sign-up button using its ID for unique styles */
+#signUp {
+    max-width: 200px; /* Maximum width for the sign-up button */
+    /* Add any specific styles for the sign-up button here */
 }
 
 .features {

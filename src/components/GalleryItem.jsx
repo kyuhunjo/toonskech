@@ -5,7 +5,9 @@ import '../styles/components/GalleryItem.css'; // Import the CSS for styling
 const GalleryItem = ({ imageUrl, altText, caption }) => {
     return (
         <div className="gallery-item">
-            <img src={imageUrl} alt={altText} className="gallery-image" />
+            <div className="gallery-image-container">
+                <img src={imageUrl} alt={altText} className="gallery-image" />
+            </div>
             {caption && <p className="gallery-caption">{caption}</p>}
         </div>
     );

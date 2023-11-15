@@ -1,25 +1,73 @@
 .learning-center {
+    max-width: 1000px; /* Restricts the width for a more readable layout */
+    margin: 40px auto; /* Centers the content on the page with vertical spacing */
     padding: 20px;
-    max-width: 1200px; /* Set a max-width for the content */
-    margin: auto; /* Center the content */
+    background: #fff; /* Sets a white background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    border-radius: 8px; /* Softens the edges with a slight radius */
 }
 
-#searchable-guides, #video-tutorials, #user-forum {
-    margin-bottom: 40px;
+/* Style for the sections */
+.learning-center > section {
+    padding: 30px;
+    margin-bottom: 40px; /* Adds more space between sections */
+    background: #f7f7f7; /* A light grey background for each section */
+    border-radius: 8px; /* Rounded corners for each section */
 }
 
-#guide-search {
+/* Header styles within sections */
+.learning-center h2 {
+    text-align: center; /* Centers the headings */
+    margin-bottom: 20px; /* Spacing after headings */
+    color: #003366; /* A color that stands out */
+    font-size: 2rem; /* A larger font size for headings */
+}
+
+/* Styles for content within sections */
+.learning-center p, .learning-center ul, .learning-center ol {
+    font-size: 1rem;
+    line-height: 1.8; /* Increased line height for readability */
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 15px; /* Consistent spacing after paragraphs and lists */
+}
+
+/* Specific styles for the searchable guides section */
+#searchable-guides input[type="search"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adds space below the search box */
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 4px; /* Matches the border radius from the container */
+    box-sizing: border-box; /* Prevents padding from affecting width */
 }
 
-.video-tutorials-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid layout */
-    grid-gap: 20px; /* Add spacing between grid items */
+/* Specific styles for the video tutorials section */
+#video-tutorials .video-tutorial {
+    margin-bottom: 20px;
+    text-align: center; /* Aligns video titles and descriptions to the center */
 }
 
-/* The rest of the styles remain the same */
+#video-tutorials .tutorial-video {
+    width: 100%;
+    height: auto; /* Adjusts height automatically */
+    aspect-ratio: 16 / 9; /* Keeps a consistent aspect ratio for videos */
+    border-radius: 4px; /* Rounded corners for the video iframe */
+}
+
+/* Additional styles for the user forum links or other interactive elements */
+#user-forum a {
+    display: block; /* Each link is a block element */
+    color: #0056b3; /* Standard link color */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px; /* Adds padding to links for a button-like feel */
+    margin-bottom: 10px; /* Space between links */
+    border-radius: 4px; /* Rounded corners for links */
+    background-color: #eef7ff; /* Light background color for links */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#user-forum a:hover {
+    background-color: #d0e4ff; /* Changes background color on hover */
+}
+
+/* Any additional elements can be styled with a similar approach */

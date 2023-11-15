@@ -1,33 +1,59 @@
 .support-content {
+    max-width: 800px; /* Restricts the width for a more readable form */
+    margin: 40px auto; /* Centers the content and adds vertical spacing */
     padding: 20px;
+    background: #fff; /* Sets a background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    border-radius: 8px; /* Softens the edges with a slight radius */
 }
 
 .contact-form, .faq, .live-chat {
-    margin-bottom: 20px;
+    padding: 20px; /* Adds padding inside the sections */
+    margin-bottom: 30px; /* Adds more space between sections */
+    background: #f7f7f7; /* Slightly different background for each section */
+    border-radius: 8px; /* Consistent with the outer container */
+}
+
+.contact-form h2, .faq h2, .live-chat h2 {
+    text-align: center; /* Centers the headings */
+    margin-bottom: 20px; /* Spacing after headings */
+    color: #003366; /* A color that stands out */
 }
 
 .contact-form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Increased space below labels for clarity */
+    font-weight: bold; /* Makes the label text bold */
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%;
+    width: calc(100% - 22px); /* Adjusts width to account for padding */
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Increased space below input fields */
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding does not affect width */
 }
 
 .primary-button {
-    padding: 10px 20px;
-    background-color: #007bff;
+    display: block; /* Makes the button a block element */
+    width: 100%; /* Full width button */
+    padding: 15px 20px; /* Larger padding for a more clickable area */
+    margin-top: 10px; /* Space above the button */
+    background-color: #0056b3; /* A darker shade for better contrast */
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+    font-size: 1rem; /* Sets a default font size */
+    transition: background-color 0.3s ease; /* Transition for a hover effect */
 }
 
-/* Add more styles as needed */
+.primary-button:hover {
+    background-color: #003366; /* Darkens the button on hover for interaction feedback */
+}
+
+/* Style for FAQ items and live chat button can be added similarly */

@@ -10,13 +10,13 @@ const HomePage = () => {
             id: 1,
             title: "자동 스케치",
             description: "귀하의 스타일에 맞춰 조정되는 AI 기반 도구를 사용하여 스케치를 만드십시오.",
-            imageUrl: "images/icon1.png"
+            icon: "images/icon1.png"
         },
         {
             id: 2,
             title: "편집실",
             description: "당사의 포괄적인 편집 제품군을 사용하여 웹툰을 정밀하게 편집하세요.",
-            imageUrl: "images/icon2.png"
+            icon: "images/icon2.png"
         },
         // Add more features as needed
     ];
@@ -51,7 +51,7 @@ const HomePage = () => {
                     <h2>놀라운 기능</h2>
                     <div className="feature-list">
                         {features.map(feature => (
-                            <FeatureItem key={feature.id} title={feature.title} description={feature.description} imageUrl={feature.imageUrl} />
+                            <FeatureItem key={feature.id} title={feature.title} description={feature.description} icon={feature.icon} />
                         ))}
                     </div>
                 </section>

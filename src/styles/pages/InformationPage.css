@@ -1,33 +1,32 @@
 .information-content {
-    max-width: 1200px;
-    margin: 40px auto;
+    max-width: 800px; /* Restricts the width for a more readable layout */
+    margin: 40px auto; /* Centers the content on the page with vertical spacing */
     padding: 20px;
+    background: #fff; /* Sets a white background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    border-radius: 8px; /* Softens the edges with a slight radius */
 }
 
 .our-story, .mission-statement, .visual-timeline {
-    margin-bottom: 40px;
-    background: #f9f9f9;
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Centralize the text blocks to prevent them from stretching to the full width */
-.our-story p, .mission-statement p, .visual-timeline p, .timeline-event p {
-    max-width: 800px; /* Set a max-width for paragraphs */
-    margin-left: auto; /* Center the block by using auto margins */
-    margin-right: auto;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Adds more space between sections */
+    background: #f7f7f7; /* A light grey background for each section */
+    border-radius: 8px; /* Rounded corners for each section */
 }
 
 .our-story h2, .mission-statement h2, .visual-timeline h2 {
-    text-align: center; /* Center-align the section headings */
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 20px;
+    font-size: 1.75rem; /* A larger font size for headings */
+    color: #003366; /* A color that stands out */
+    margin-bottom: 15px; /* Spacing after headings */
+    text-align: left; /* Aligns the heading to the left */
+}
+
+.our-story p, .mission-statement p, .visual-timeline p {
+    font-size: 1rem;
+    line-height: 1.6; /* Increased line height for readability */
+    color: #333; /* Darker color for better readability */
+    margin-bottom: 15px; /* Spacing after paragraphs */
+    text-align: justify; /* Justifies the text for a clean look */
 }
 
 .timeline {
@@ -37,26 +36,23 @@
 }
 
 .timeline-event {
-    padding: 15px;
-    background: #fff;
     margin-bottom: 15px;
+    padding: 10px;
+    background: #fff; /* Background for timeline events */
+    border-left: 4px solid #007bff; /* Adds a left border for visual interest */
     border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    max-width: 800px; /* Match the paragraph width for consistency */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .timeline-event h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #003366;
-    margin-bottom: 10px;
-    text-align: left; /* Align the event titles to the left */
+    margin-bottom: 5px;
 }
 
-/* Ensure the container of the sections has text content centrally aligned */
-.section-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.timeline-event p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter than main text for contrast */
+    margin-bottom: 0; /* Removes margin at the bottom of paragraphs */
 }
+
+/* Additional specific styles for elements within your information sections */

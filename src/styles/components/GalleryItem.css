@@ -1,19 +1,39 @@
 .gallery-item {
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 5px;
+    overflow: hidden; /* Ensures the content fits within the borders */
     margin: 10px;
     text-align: center;
+    background: #fff; /* Adds a background color */
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+}
+
+/* Container to maintain aspect ratio */
+.gallery-image-container {
+    width: 100%; /* Full width of the parent container */
+    padding-top: 56.25%; /* Aspect ratio 16:9, for example */
+    position: relative; /* Position relative to the pseudo-element */
+}
+
+/* Pseudo-element to enforce the aspect ratio */
+.gallery-image-container::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
 }
 
 .gallery-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+    position: absolute; /* Absolute position within the relative container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    object-fit: cover; /* Covers the container, cropping the image if necessary */
 }
 
 .gallery-caption {
-    margin-top: 5px;
-    font-size: 14px;
+    padding: 5px 10px; /* Padding inside the caption */
+    font-size: 0.9rem; /* Slightly smaller font size for captions */
     color: #666;
 }

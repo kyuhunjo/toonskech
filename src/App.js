@@ -6,7 +6,7 @@ import Footer from './components/Footer'; // Assuming you have a Footer componen
 // Importing page components
 import HomePage from './containers/HomePage';
 import InformationPage from './containers/InformationPage';
-import FeaturePage from './containers/FeaturePage';
+import FeaturesPage from './containers/FeaturesPage';
 import CommunityPage from './containers/CommunityPage';
 import ToolInterfacePage from './containers/ToolInterfacePage';
 import LearningCenterPage from './containers/LearningCenterPage';
@@ -24,7 +24,7 @@ function App() {
             <Routes>
                <Route path="/" exact element={<HomePage />} />
                <Route path="/information" element={<InformationPage />} />
-               <Route path="/features" element={<FeaturePage />} />
+               <Route path="/features" element={<FeaturesPage />} />
                <Route path="/community" element={<CommunityPage />} />
                <Route path="/tool-interface" element={<ToolInterfacePage />} />
                <Route path="/learning-center" element={<LearningCenterPage />} />
