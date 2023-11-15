@@ -1,0 +1,33 @@
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: #f7f7f7;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #e7e7e7;
+}
+
+.toggle-icon {
+    float: right;
+    transition: transform 0.3s;
+}
+
+.toggle-icon.open {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}

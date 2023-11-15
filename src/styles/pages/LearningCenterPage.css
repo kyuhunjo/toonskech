@@ -1,0 +1,25 @@
+.learning-center {
+    padding: 20px;
+    max-width: 1200px; /* Set a max-width for the content */
+    margin: auto; /* Center the content */
+}
+
+#searchable-guides, #video-tutorials, #user-forum {
+    margin-bottom: 40px;
+}
+
+#guide-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.video-tutorials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create a responsive grid layout */
+    grid-gap: 20px; /* Add spacing between grid items */
+}
+
+/* The rest of the styles remain the same */

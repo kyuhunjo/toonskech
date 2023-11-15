@@ -1,0 +1,19 @@
+.video-tutorial {
+    margin-bottom: 20px;
+}
+
+.tutorial-video {
+    width: 100%;
+    height: 315px; /* You can adjust this as needed */
+    border: none;
+}
+
+.video-tutorial h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.video-tutorial p {
+    font-size: 14px;
+    color: #666;
+}

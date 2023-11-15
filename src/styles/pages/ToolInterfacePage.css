@@ -1,0 +1,53 @@
+.tool-interface {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.canvas-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#webtoonCanvas {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.toolbar {
+    width: 30%;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Align buttons to center */
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+/* Since we are now using flexbox, we can remove the padding and margin from .tool-button */
+.tool-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 10px 0; /* Add margin for spacing */
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 100%; /* Make buttons full width of the toolbar */
+}
+
+.tool-button:hover {
+    background-color: #e0e0e0;
+}
+
+.button-icon {
+    margin-right: 10px;
+    width: 24px; /* Adjust size as needed */
+    height: auto;
+}
