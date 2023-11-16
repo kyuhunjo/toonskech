@@ -4,14 +4,14 @@ import Navigation from './components/Navigation'; // Assuming you have a Navigat
 import Footer from './components/Footer'; // Assuming you have a Footer component
 
 // Importing page components
-import HomePage from './containers/HomePage';
-import InformationPage from './containers/InformationPage';
-import FeaturesPage from './containers/FeaturesPage';
-import CommunityPage from './containers/CommunityPage';
-import ToolInterfacePage from './containers/ToolInterfacePage';
-import LearningCenterPage from './containers/LearningCenterPage';
-import ContactSupportPage from './containers/ContactSupportPage';
-import PrivacyTermsPage from './containers/PrivacyTermsPage';
+import HomePage from './pages/HomePage';
+import InformationPage from './pages/InformationPage';
+import FeaturesPage from './pages/FeaturesPage';
+import CommunityPage from './pages/CommunityPage';
+import ToolInterfacePage from './pages/ToolInterfacePage';
+import LearningCenterPage from './pages/LearningCenterPage';
+import ContactSupportPage from './pages/ContactSupportPage';
+import PrivacyTermsPage from './pages/PrivacyTermsPage';
 
 // Global styles
 import './styles/main.css';

@@ -1,0 +1,3 @@
+export const ADD_FEATURE = 'ADD_FEATURE';
+export const REMOVE_REATURE = 'REMOVE_FEATURE';
+export const SET_FEATURE = 'SET_FEATURE';
